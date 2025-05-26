@@ -1,0 +1,131 @@
+body{
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #434455;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+h2{
+    color: #2E2F42;
+    font-size: 36px;
+    line-height: 1.11111;
+}
+h3{
+    color: #2E2F42;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+p{
+    line-height: 1.5;
+}
+
+/* LOGO */
+.logo-black, .logo-white{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    line-height: 1.16667;
+}
+.web-logo{
+    color: #4D5AE5;
+}
+.logo-black{
+    color: #2E2F42;
+}
+.logo-white{
+    color: #F4F4FD;
+}
+
+/* HEADER */
+.contacts{
+    font-style: normal;
+}
+.page-nav .link{
+    font-size: 16px;
+    color: #2E2F42;
+    font-weight: 500;
+    line-height: 1.5;
+    transition: .3s ease;
+}
+.page-nav .link:hover,
+.page-nav .link:focus{
+    color: #404BBF;
+    transition: .3s ease;
+}
+.contacts a{
+    font-size: 16px;
+    color: #434455;
+    font-weight: 400;
+    line-height: 1.5;
+    transition: .3s ease;
+}
+.contacts a:hover,
+.contacts a:focus{
+    color: #404BBF;
+    transition: .3s ease;
+}
+
+/* ORDER */
+.order{
+    background-color: #2E2F42;
+    height: 600px;
+}
+.title {
+    color: #FFFFFF;
+    font-size: 56px;
+    line-height: 1.07143;
+}
+.order-button{
+    background-color: #4D5AE5;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 16px 32px 16px 32px;
+    border-width: 0px;
+    border-radius: 4px;
+    line-height: 1.5;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.order-button:hover, 
+.order-button:focus{
+    background-color: #404BBF;
+    transition: .3s ease;
+}
+
+/* OUR TEAM */
+.team-list img {
+    width: 264px;
+}
+
+/* OUR PORTFOLIO */
+.portfolio img{
+    width: 360px;
+}
+
+/* FOOTER */
+footer{
+    background-color: #2E2F42;
+    height: 312px;
+}
+footer p{
+    color: #F4F4FD;
+}
+
+
+
+
+
+
+/* 
+NAVYBLUE   #2E2F42 
+SLATE      #434455
+IRIS       #4D5AE5 
+CLOUD      #F4F4FD
+*/
