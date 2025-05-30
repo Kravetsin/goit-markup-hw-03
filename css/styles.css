@@ -1,127 +1,190 @@
-body{
-    background-color: #fff;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: #434455;
+/* INHERIT */
+body {
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #434455;
 }
-a{
-    text-decoration: none;
+h1, h2, h3, h4, h5, h6, p , ul{
+  margin: 0;
+  padding: 0;
 }
-ul{
-    list-style-type: none;
+a {
+  text-decoration: none;
 }
-h2{
-    color: #2E2F42;
-    font-size: 36px;
-    line-height: 1.11111;
+ul {
+  list-style-type: none;
 }
-h3{
-    color: #2E2F42;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
+h2 {
+  color: #2e2f42;
+  font-size: 36px;
+  line-height: 1.11111;
 }
-p{
-    line-height: 1.5;
+h3 {
+  color: #2e2f42;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+p {
+  line-height: 1.5;
+}
+.container {
+  max-width: 1158px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+.section {
+  padding: 120px 0;
 }
 
 /* LOGO */
-.logo-black, .logo-white{
-    font-family: 'Raleway', sans-serif;
-    font-size: 18px;
-    line-height: 1.16667;
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  color: #2e2f42;
+  line-height: 1.16667;
 }
-.web-logo{
-    color: #4D5AE5;
+footer .logo {
+  color: #f4f4fd;
 }
-.logo-black{
-    color: #2E2F42;
-}
-.logo-white{
-    color: #F4F4FD;
+.logo span {
+  color: #4d5ae5;
 }
 
 /* HEADER */
-.contacts{
-    font-style: normal;
+.top-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  border-bottom: 1px solid #e7e9fc;
+  padding: 24px 0;
 }
-.page-nav .link{
-    font-size: 16px;
-    color: #2E2F42;
-    font-weight: 500;
-    line-height: 1.5;
-    transition: .3s ease;
+.contacts {
+  display: flex;
+  font-style: normal;
+}
+.page-nav{
+  display: flex;
+}
+.page-nav .nav-list{
+  display: flex;
+  width: 261px;
+  flex-basis: calc((261px - 40px) / 3);
+  
+}
+.page-nav .link {
+  display: flex;
+  font-size: 16px;
+  color: #2e2f42;
+  font-weight: 500;
+  line-height: 1.5;
+  transition: 0.3s ease;
 }
 .page-nav .link:hover,
-.page-nav .link:focus{
-    color: #404BBF;
-    transition: .3s ease;
+.page-nav .link:focus {
+  color: #404bbf;
+  transition: 0.3s ease;
 }
-.contacts a{
-    font-size: 16px;
-    color: #434455;
-    font-weight: 400;
-    line-height: 1.5;
-    transition: .3s ease;
+.contacts a {
+  display: flex;
+  font-size: 16px;
+  color: #434455;
+  font-weight: 400;
+  line-height: 1.5;
+  transition: 0.3s ease;
 }
 .contacts a:hover,
-.contacts a:focus{
-    color: #404BBF;
-    transition: .3s ease;
+.contacts a:focus {
+  color: #404bbf;
+  transition: 0.3s ease;
 }
 
 /* ORDER */
-.order{
-    background-color: #2E2F42;
-    height: 600px;
+.order {
+  background-color: #2e2f42;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .title {
-    color: #FFFFFF;
-    font-size: 56px;
-    line-height: 1.07143;
+  color: #ffffff;
+  font-size: 56px;
+  line-height: 1.07143;
+  width: 496px;
+  padding: 48px 0;
 }
-.order-button{
-    background-color: #4D5AE5;
-    color: #FFFFFF;
-    font-size: 16px;
-    font-weight: 500;
-    padding: 16px 32px 16px 32px;
-    border-width: 0px;
-    border-radius: 4px;
-    line-height: 1.5;
-    cursor: pointer;
-    transition: .3s ease;
+.order-button {
+  background-color: #4d5ae5;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 16px 32px;
+  border-width: 0px;
+  border-radius: 4px;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
-.order-button:hover, 
-.order-button:focus{
-    background-color: #404BBF;
-    transition: .3s ease;
+.order-button:hover,
+.order-button:focus {
+  background-color: #404bbf;
+  transition: 0.3s ease;
+}
+
+/* BENEFITS */
+.benefits {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+.benefits .feature {
+  max-width: 264px;
 }
 
 /* OUR TEAM */
-.team-list img {
-    width: 264px;
+.team-list .team-card {
+  width: 264px;
+  flex-basis: calc((100% - 48px) / 3);
+}
+.team-list {
+  display: flex;
+  justify-content: center;
+}
+.team-card img {
+  width: 264px;
+}
+.section.our-team{
+  background-color: #f4f4fd;
 }
 
 /* OUR PORTFOLIO */
-.portfolio img{
-    width: 360px;
+.portfolio {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.project-card img {
+  width: 360px;
+}
+.portfolio .project-card {
+  flex-basis: calc((100% - 48px) / 3);
 }
 
 /* FOOTER */
-footer{
-    background-color: #2E2F42;
-    height: 312px;
+footer {
+  background-color: #2e2f42;
+  height: 312px;
 }
-footer p{
-    color: #F4F4FD;
+footer p {
+  color: #f4f4fd;
 }
-
-
-
-
-
 
 /* 
 NAVYBLUE   #2E2F42 
