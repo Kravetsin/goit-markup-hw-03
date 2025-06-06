@@ -121,19 +121,13 @@ ul {
 
 /* !Order section */
 .order {
-  background-color: #2e2f42;
-}
-
-.order {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   height: 600px;
-}
-
-.section .order{
+  background-color: #2e2f42;
   padding: 188px 0;
 }
 
@@ -187,8 +181,16 @@ ul {
   color: #2e2f42;
 }
 
-.visually-hidden{
-  display: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .page-text {
@@ -206,10 +208,9 @@ ul {
 .team-list {
   display: flex;
   gap: 24px;
-  flex-basis: calc((100% - 72px) / 4);
 }
 
-.team-list .page-text{
+.team-list .page-text {
   text-align: center;
 }
 
@@ -226,7 +227,12 @@ ul {
 .team-card {
   background-color: #ffffff;
   max-width: 264px;
+  flex-basis: calc((100% - 72px) / 4);
   border-radius: 0 0 4px 4px;
+}
+
+.team-card img{
+  display: block;
 }
 
 .card-info {
@@ -234,11 +240,11 @@ ul {
   flex-direction: column;
   align-items: center;
   max-width: 232px;
-  margin: 32px 16px;
+  padding: 32px 0;
 }
 
-.our-team > .container{
-  padding: 32px 0;
+.card-info .section-text{
+  text-align: center;
 }
 
 /* !Our Portfolio */
@@ -257,6 +263,10 @@ ul {
 .project-card {
   width: calc((100% - 48px) / 3);
   margin-bottom: 48px;
+}
+
+.project-card img{
+  display: block;
 }
 
 .project-info {
@@ -280,7 +290,7 @@ ul {
   padding: 100px 0;
 }
 
-.end-page .logo{
+.end-page .logo, .end-page .span-logo {
   display: inline-block;
   margin-bottom: 16px;
 }
