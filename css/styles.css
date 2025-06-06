@@ -291,12 +291,12 @@ ul {
   padding: 100px 0;
 }
 
-.footer-text {
+/* .footer-text {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-}
+} */
 
 .end-page a {
   display: inline-block;
