@@ -181,7 +181,7 @@ ul {
   color: #2e2f42;
 }
 
-.section-title .visually-hidden {
+.section-title.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
