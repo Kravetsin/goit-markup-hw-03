@@ -181,16 +181,17 @@ ul {
   color: #2e2f42;
 }
 
-.visually-hidden {
+.section-title .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
-  padding: 0;
   margin: -1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  white-space: nowrap;
   border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .page-text {
@@ -231,7 +232,7 @@ ul {
   border-radius: 0 0 4px 4px;
 }
 
-.team-card img{
+.team-card img {
   display: block;
 }
 
@@ -243,7 +244,7 @@ ul {
   padding: 32px 0;
 }
 
-.card-info .section-text{
+.card-info .section-text {
   text-align: center;
 }
 
@@ -265,7 +266,7 @@ ul {
   margin-bottom: 48px;
 }
 
-.project-card img{
+.project-card img {
   display: block;
 }
 
@@ -290,14 +291,14 @@ ul {
   padding: 100px 0;
 }
 
-.end-page .logo, .end-page .span-logo {
-  display: inline-block;
-  margin-bottom: 16px;
-}
-
 .footer-text {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+}
+
+.end-page .footer-text a {
+  display: inline-block;
+  margin-bottom: 16px;
 }
