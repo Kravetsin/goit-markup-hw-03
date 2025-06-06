@@ -298,7 +298,7 @@ ul {
   flex-direction: column;
 }
 
-.end-page .footer-text a {
+.end-page a {
   display: inline-block;
   margin-bottom: 16px;
 }
