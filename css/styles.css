@@ -228,6 +228,9 @@ ul {
 
 .project-card {
   margin-bottom: 48px;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
 }
 
 .project-info {
@@ -235,9 +238,7 @@ ul {
   flex-direction: column;
   align-items: start;
   padding: 16px 32px;
-  border-bottom: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
+  
 }
 
 /* !Footer */
@@ -251,11 +252,11 @@ ul {
   background-color: #2e2f42;
 }
 
-.logo-box{
+.logo-box {
   margin-bottom: 16px;
 }
 
-.footer-text{
+.footer-text {
   display: flex;
   align-items: flex-start;
   justify-content: center;
